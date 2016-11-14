@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class User implements Serializable {
     private Integer id;
-    private  String name;
+    private  String userName;
 
     public Integer getId() {
         return id;
@@ -17,11 +17,11 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

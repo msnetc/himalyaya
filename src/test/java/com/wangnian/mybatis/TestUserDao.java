@@ -1,7 +1,8 @@
 package com.wangnian.mybatis;
 
+
+import com.wangnian.mybatis.dao.UserDao;
 import com.wangnian.mybatis.entity.User;
-import com.wangnian.mybatis.mapper.UserDaoMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,21 +12,14 @@ import org.springframework.util.Assert;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = SpringbootmybatisApplication.class)
-public class SpringbootmybatisApplicationTests {
+public class TestUserDao {
 
+    @Autowired
+    private UserDao userDao ;
 
-	@Autowired
-	private UserDaoMapper userDaoMapper;
-
-
-	@Test
-	public void getUser(){
-		User user1 = userDaoMapper.selectUserById(9);
-		Assert.notNull(user1);
-		User Use2 = userDaoMapper.selectUserById(8);
-	}
-	@Test
-	public void contextLoads() {
-	}
-
+    @Test
+    public void getUser(){
+        User user1 = userDao.getUserById(9);
+        Assert.notNull(user1);
+    }
 }

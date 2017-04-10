@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/*refer to :
+使用 Spring 3 来创建 RESTful Web Services
+https://www.ibm.com/developerworks/cn/web/wa-spring3webserv/
+//Spring MVC 4 RESTFul Web Services CRUD Example+RestTemplate
+http://websystique.com/springmvc/spring-mvc-4-restful-web-services-crud-example-resttemplate/
+ */
 @RestController
 @Component
 public class UserController {

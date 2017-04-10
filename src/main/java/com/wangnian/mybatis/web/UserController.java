@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 https://www.ibm.com/developerworks/cn/web/wa-spring3webserv/
 //Spring MVC 4 RESTFul Web Services CRUD Example+RestTemplate
 http://websystique.com/springmvc/spring-mvc-4-restful-web-services-crud-example-resttemplate/
+debug refer to:
+http://stackoverflow.com/questions/24113939/how-to-debug-spring-boot-application-with-eclipse
+Why don't you just right click on the main() method and choose "Debug As... Java Application"?
  */
 @RestController
 @Component

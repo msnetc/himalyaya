@@ -8,9 +8,8 @@ import javax.annotation.Resource;
 
 @Component
 public class UserDao {
-
     @Resource
-    public SqlSession sqlSession;
+   private SqlSession sqlSession;
 
     public User getUserById(long id) {
         User user =sqlSession.selectOne("selectUserById", id);

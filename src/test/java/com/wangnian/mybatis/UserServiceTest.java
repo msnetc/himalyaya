@@ -17,4 +17,18 @@ public class UserServiceTest  extends  TestBase{
         User user1 = userService.getUserById(9);
         Assert.notNull(user1);
     }
+
+    @Test
+    public void TestConnection(){
+        try{
+
+            Integer cnt =10000;
+            for(int i=0;i<cnt;i++){
+                userService.getUserById(i);
+            }
+        }catch(Exception e)
+        {
+            String msg = e.getMessage();
+        }
+    }
 }
